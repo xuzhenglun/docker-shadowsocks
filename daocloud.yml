@@ -1,0 +1,16 @@
+version: "2.0"
+test:
+  image: ubuntu
+  script:
+  - echo 祥瑞御免，家宅平安
+build:
+  image:
+    dockerfile_path: /Dockerfile
+    build_dir: /
+    cache: true
+    args:
+     - PASSWORD=daocloud
+     - METHOD=rc4-md5
+     - PORT=443
+     - OTA=true
+     - UDP=true
