@@ -14,4 +14,4 @@ build:
      - PORT=443
      - OTA=true
      - UDP=true
-     - "SMOKER=true . && touch /tmp/fail"
+     - SMOKER=$PATH
