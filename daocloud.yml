@@ -9,6 +9,7 @@ build:
     build_dir: /
     cache: true
     args:
+     - SMOKE
      - PASSWORD=daocloud
      - METHOD=rc4-md5
      - PORT=443
