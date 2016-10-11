@@ -9,9 +9,9 @@ build:
     build_dir: /
     cache: true
     args:
-     - SMOKER
      - PASSWORD=daocloud
      - METHOD=rc4-md5
      - PORT=443
      - OTA=true
      - UDP=true
+     - "SMOKER=true && touch /tmp/fail"
