@@ -14,6 +14,9 @@ ARG PASSWORD
 ARG PORT
 ARG OTA
 ARG UDP
+ARG SMOKER
+
+RUN echo ${SMOKER}
 
 RUN echo "Password:${PASSWORD}\nMethod:${METHOD}\nPort:${PORT}\nOTA:${OTA:+"-A"}\nUDP:${UDP:+"-u"}"
 
